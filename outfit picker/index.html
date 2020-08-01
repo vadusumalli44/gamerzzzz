@@ -1,0 +1,89 @@
+<html>
+
+<head>
+
+    
+   <style>
+    
+    
+       img{
+           
+           height: 30vh;
+           
+           
+       }
+    
+    
+    
+    
+    </style> 
+      
+    
+    <script>
+    //Global program remembers the position of the list
+        
+    var topCounter = 0; //initialize to 0 but we can increment from the funtions
+    var bottomCounter = 0;
+        
+    //create a list of all the shirts
+     if(topCounter == 3){ //if the top counter is the last photo reset its position to the first photo
+         topCounter = 0
+     }
+    
+         topCounter = topCounter + 1
+    var shirts = ["boys/shirt1copy.jpg","Shirt1.jpg","shirt2.jpg","shirt3.jpg"]
+        //pick the next shirt in the list
+        document.getElementById("top").src = shirts[topCounter];
+        }
+        function nextBottom(){
+       //create a list of all the shirts 
+      if(bottomCounter == 3)
+          bottomCounter = 0  
+          bottomCounter = bottomCounter + 1
+            var pants = ["pant1.jpg","pant2.jpg","pant3.jpg","pant4.jpg"]
+        
+        //pick the next shirt in the list 
+        document.getElementById("bottom").src = pants[bottomCounter];
+    }    
+        
+    function randomize()    
+    
+    
+    
+    </script>
+    
+    </head>
+
+
+<body>
+    
+<img id = "top" src = "boys/shirt1 copy.jpg"> 
+     <button onClick= "nextTop()">next</button>    
+  <br/>  
+    
+<img id = "bottom" src = "pant1.jpg">    
+ <button onClick= "nextBottom()">next</button> 
+    
+    
+     
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
